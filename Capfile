@@ -40,7 +40,8 @@ require 'capistrano/rbenv'
 require 'capistrano/bundler'
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.3.1'
+set :rbenv_ruby, '2.3.3'
+# set :rbenv_path, '/home/deploy/.rbenv/versions'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
