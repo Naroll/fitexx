@@ -2,7 +2,7 @@
 lock "~> 3.10.1"
 
 set :application, "fitexx"
-set :repo_url, "git@https://github.com/Naroll/fitexx.git"
+set :repo_url, "https://github.com/Naroll/fitexx.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
