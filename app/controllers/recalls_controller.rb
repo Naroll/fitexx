@@ -5,7 +5,11 @@ class RecallsController < ApplicationController
 
 	def create
 		@recall = Recall.new(recall_params)
-		@recall.save
+		if @recall.valid?
+			@recall.save
+		else
+			render action: 'new'
+		end
 	end
 
 	private
