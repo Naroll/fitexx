@@ -5,6 +5,7 @@ class RecallsController < ApplicationController
 
 	def create
 		@recall = Recall.new(recall_params)
+		@recall.save
 	end
 
 	private
