@@ -1,1 +1,18 @@
-<h1>Мы вам перезвоним.</h1>
+<h1>We will call you back</h1>
+
+<%= form_for :recall, url: recalls_path do |f| %>
+	
+	<p>
+		<%= f.label :name %> <br>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :phone %> <br>
+		<%= f.text_field :phone %>
+	</p>
+
+	<p>
+		<%= f.submit 'OK'%> <br>
+	</p>
+<% end %>
