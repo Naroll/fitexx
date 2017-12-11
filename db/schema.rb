@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171207203430) do
+ActiveRecord::Schema.define(version: 20171211215647) do
 
   create_table "backcalls", force: :cascade do |t|
     t.string "name"
     t.string "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "recalls", force: :cascade do |t|
+    t.string "name"
+    t.text "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
