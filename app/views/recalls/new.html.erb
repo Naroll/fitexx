@@ -1,18 +1,26 @@
-<h1>We will call you back</h1>
 
-<%= form_for :recall, url: recalls_path do |f| %>
+<div class="container"></div>
+	<div class="row">
+	  <div class="col-md-5"></div>
+	  <div class="col-md-2">
+	  	<%= form_for :recall, url: recalls_path do |f| %>
 	
-	<p>
-		<%= f.label :name %> <br>
-		<%= f.text_field :name %>
-	</p>
+				<p>
+					<%= f.label :name %> <br>
+					<%= f.text_field :name, class: 'form-control' %>
+				</p>
 
-	<p>
-		<%= f.label :phone %> <br>
-		<%= f.text_field :phone %>
-	</p>
+				<p>
+					<div class="form-group">
+						<%= f.label :phone %> <br>
+						<%= f.text_field :phone, class: 'form-control' %> 
+				  </div>
+				</p>	
 
-	<p>
-		<%= f.submit 'Ok', class: 'btn btn-success'%> <br>
-	</p>
-<% end %>
+				<p>
+					<%= f.submit 'Call me back', class: 'btn btn-primary'%> <br>
+				</p>
+			<% end %>
+	  </div>
+	</div>
+</div>
